@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding tasks</title>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="taskstyle2.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to your task manger profile</h1>
+            <h4>Create, manage and add tasks the way you want.... Just at your fingertips</h4>
+        </header>
+        <main>
+            <section class="first">
+                <nav class="add">
+                     <h1>Add your new task</h1>
+                     <img src="tm1.png" alt="">
+                     <form action="get">
+                         Name of the task <input type="text" name="name" placeholder="e.g. Vacation trip"> <br>
+                         Description of the task <input type="textarea" name="desc" placeholder="Enter details of the task"> <br>
+                         Category of task <select name="category" id="">
+                            <option value="select">select</option>
+                             <option value="business">business</option>
+                             <option value="family">Family</option>
+                             <option value="marketing">marketing</option>
+                             <option value="social service">social service</option>
+                         </select> <br>
+                         Task status <select name="status" id="">
+                            <option value="select">select</option>
+                            <option value="Pending">Pending</option>
+                             <option value="Done">Done</option>
+                         </select> <br>
+                         Due date of the task <input type="text" name="time" placeholder="due date for task completion"> <br>
+                         <a href="task2.html"><button>Update</button></a>
+                     </form>
+                </nav>
+            </section>
+            <section class="second">
+                  <nav class="sub">
+                       <h2>Add subtasks to your Task </h2> 
+                    <div class="collect">
+                        <div class="to-do">
+                            <h1>Things to do</h1>
+                            <button class="card" id="cards1">+ Add a card</button>
+                             <form action="">
+                                    <ul class="one">
+                                        <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                        <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                        <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                        <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                        <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    </ul>
+                            </form>
+                        </div>
+                        <div class="doing">
+                            <h1>Doing</h1>
+                            <button class="card" id="cards2">+ Add a card</button>
+                            <form action="">
+                                <ul class="two">
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="done">
+                            <h1>Done</h1>
+                            <button class="card" id="cards3">+ Add a card</button>
+                            <form action="">
+                                <ul class="three">
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                    <li><input type="text" placeholder="add task" name="task"> <br></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div> 
+                  </nav>
+            </section>
+        </main>
+    </body>
+    <script>
+        document.getElementById('cards1').addEventListener('click', function() {
+            document.querySelector('.one').style.display = 'block';
+            });
+        document.getElementById('cards2').addEventListener('click', function() {
+            document.querySelector('.two').style.display = 'block';
+            });
+        document.getElementById('cards3').addEventListener('click', function() {
+            document.querySelector('.three').style.display = 'block';
+            });
+
+    </script>
+</html>
