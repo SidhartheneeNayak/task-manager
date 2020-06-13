@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Taskmanager website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="taskstyle1.css">
+    </head>
+    <body>
+        <header>
+           <nav class="heading">
+               <h1>Smarto</h1>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+           </nav>
+        </header>
+        <main>
+            <section>
+                <img src="images/tm2.jpg" alt="" class="class1">
+                <img src="images/tm5.jpg" alt="" class="class2">
+                <h3>Smarto is your new task manager app that helps you to complete all your work smartly and efficiently.</h3>
+                <p>Agile teams can stay focused on delivering iterative and incremental value, as fast as possible, with customizable scrum boards. Boards, lists and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.</p>
+                <br>
+                <p style="font-weight: 600;">So, let's get started...</p>
+            </section>
+            <a href="#" class="link1"><button style="cursor: pointer;" id="button">LOGIN</button></a>
+            <p style="text-align: center; padding: 18px;">New user? Click here to <a href="signup.html" style="color: black;">Sign up</a></p>
+            <div class="portal">
+                <div class="content">
+                    <div class="close">+</div>
+                     <h1 >Welcome!!!</h1>
+                     <form action="task1.php" method="post">
+                         Name <input type="text" name="name" placeholder="Enter username"> <br>
+                         Password <input type="password" name="password" placeholder="Enter password"><br>
+                        </form>
+                         <a href="task1.html"><button value="Login" class="button">Login</button></a>
+                     
+                     
+                </div>
+            </div>
+            <div class="details">
+                  
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            document.querySelector('.portal').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click', function() {
+            document.querySelector('.portal').style.display="none";
+        });
+</script>
+</html> 
