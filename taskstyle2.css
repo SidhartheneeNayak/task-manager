@@ -125,7 +125,7 @@ body {
     }
     .add {
         width: 420px;
-        height: 700px;
+        height: 760px !important;
         border: 2px solid black;
         border-radius: 5px;
         display: block;
